@@ -18,15 +18,15 @@ function calculator() {
     const timeResult = document.querySelector(".time_result");
 
     if (fieldValue.value == "") {
-        alert('입력해주세요');
+        alert('분야를 입력해주세요');
         fieldValue.focus();
-        return false();
+        return false;
     } else if (timeValue.value == "") {
         alert('시간을 입력해주세요');
         timeValue.focus();
-        return false();
+        return false;
     } else if (timeValue_int > 24) {
-        alert('24이하의 값을 입력해주세요');
+        alert('24이하의 값으로 입력해주세요');
         return false;
     }
 
@@ -34,11 +34,11 @@ function calculator() {
     loading.style.display = 'flex';
 
     setTimeout(function () {
-        loading.style.display = 'none';
-        result.style.display = 'flex';
-
         fieldResult.innerText = fieldValue.value;
         timeResult.innerText = parseInt((10000 / timeValue_int), 10);
+
+        loading.style.display = 'none';
+        result.style.display = 'flex';
     }, 1800);
 }
 
