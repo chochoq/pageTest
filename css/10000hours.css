@@ -30,16 +30,12 @@
 
 /* 로딩중표시 */
 @keyframes rotate{
-    50%{
-        transform: rotate(180deg);
-    }
     100%{
         transform: rotate(360deg);
     }
 }
 
 html, body{
-    width: 100%;
     height: 100%;
 }
 
@@ -50,16 +46,8 @@ body {
 }
 
 /* 메인컨텐츠 */
-#contents{
-    display:flex;
-    justify-content: center;
-}
 
 .wrapper{
-    width:100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
     margin-Top:50px;
 }
 
@@ -96,6 +84,7 @@ body {
 }
 
 .intro .intro_saying{
+    /* 폰트를 자주 사용하지 않는다면 그 폰트로 만들어서 img로 만들어서 넣는것이 용량적으로 추천함(폰트 용량이 의외로 크다)*/
     font-family: 'OTEnjoystoriesBA';
     font-size:36px;
     color: #F5DF4D;
@@ -159,7 +148,6 @@ body {
 /* 버튼 공통 스타일 */
 
 button{
-    display: flex;
     align-items: center;
     font-family: 'GmarketSansBold';
     font-size:20px;
