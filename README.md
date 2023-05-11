@@ -2,6 +2,10 @@
 
 간단한 페이지로 1만시간을 계산해줍니다.
 
+![](https://github.com/chochoq/pageTest/assets/72794550/b22a6d8d-e26f-4fe1-a69a-434981a49eac)
+![](https://github.com/chochoq/pageTest/assets/72794550/2eb9619f-ad02-4ee8-a66b-eac6a96a2813)
+
+
 # 🛠기술스택🛠
 
 - HTML
